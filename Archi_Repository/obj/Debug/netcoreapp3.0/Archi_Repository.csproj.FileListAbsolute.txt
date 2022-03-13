@@ -1,0 +1,11 @@
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\bin\Debug\netcoreapp3.0\Archi_Repository.deps.json
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\bin\Debug\netcoreapp3.0\Archi_Repository.dll
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.AssemblyInfoInputs.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.AssemblyInfo.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\bin\Debug\netcoreapp3.0\Archi_Repository.pdb
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\bin\Debug\netcoreapp3.0\Archi_Data.dll
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\bin\Debug\netcoreapp3.0\Archi_Data.pdb
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.csprojAssemblyReference.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.csproj.CopyComplete
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.dll
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Repository\obj\Debug\netcoreapp3.0\Archi_Repository.pdb

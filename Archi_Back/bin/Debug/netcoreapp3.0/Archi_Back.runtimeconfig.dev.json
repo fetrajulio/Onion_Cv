@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Dialy\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Dialy\\.nuget\\packages"
+    ]
+  }
+}

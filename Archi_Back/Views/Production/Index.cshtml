@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="row">
+
+        
+        <div class="col-12">
+            <div class="card bg-light mb-3">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-10">Nos Produit</div>
+                        <div class="col-2"><button type="button" class="btn btn-primary">+Nouveau</button></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom Produit</th>
+                                <th scope="col">Prix Unitaire</th>
+                                <th scope="col">Qte</th>
+                                <th scope="col">Action</th>
+                                <th scope="col"></th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Archi_Data.Produit p in ViewBag.produits)
+                            {
+
+                                <tr>
+                                    <th scope="row">@p.Nom</th>
+                                    <td>@p.PrixUnitaire Ar</td>
+                                    <td>@p.QteStock</td>
+                                    <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                                    <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
+                                    
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+

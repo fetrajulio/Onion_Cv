@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Back\\Archi_Back.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Back\\Archi_Back.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Back\\Archi_Back.csproj",
+        "projectName": "Archi_Back",
+        "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Back\\Archi_Back.csproj",
+        "packagesPath": "C:\\Users\\Dialy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Back\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dialy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj"
+              },
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj"
+              },
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\Archi_Service.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\Archi_Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.28, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj",
+        "projectName": "Archi_Data",
+        "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj",
+        "packagesPath": "C:\\Users\\Dialy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dialy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj",
+        "projectName": "Archi_Repository",
+        "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj",
+        "packagesPath": "C:\\Users\\Dialy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dialy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.28, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\Archi_Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\Archi_Service.csproj",
+        "projectName": "Archi_Service",
+        "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\Archi_Service.csproj",
+        "packagesPath": "C:\\Users\\Dialy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dialy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Data\\Archi_Data.csproj"
+              },
+              "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj": {
+                "projectPath": "C:\\Users\\Dialy\\source\\repos\\Archi_Back\\Archi_Repository\\Archi_Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

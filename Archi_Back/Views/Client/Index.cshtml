@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    
+    <div class="col-9">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nom Produit</th>
+                    <th scope="col">Prix Unitaire</th>
+                    <th scope="col">Qte</th>
+                    <th scope="col">Disponibilite</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Archi_Data.Produit p in ViewBag.produits)
+                {
+
+                    <tr>
+                        <th scope="row">@p.Nom</th>
+                        <td>@p.PrixUnitaire Ar</td>
+                        <td>
+                            
+                                <select class="form-select" id="exampleSelect1">
+                                    @for(int a=0;a<p.QteStock;a++)
+                                    {
+                                        <option> @a sur @p.QteStock</option>
+                                    }
+                                </select>
+                            
+                        </td>
+                        <td>
+                            @if (p.QteStock != 0)
+                            {
+                                <span class="badge bg-success">Disponible</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">epuise</span>
+                            }
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary">Acheter</button>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="col-3">
+        <div class="card border-primary mb-3">
+            <div class="card-header">Bienvenue @ViewBag.Client.Nom</div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+</div>
+

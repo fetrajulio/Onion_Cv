@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+    <br /><br />
+
+<div class="row">
+    <div class="col-6">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nom Produit</th>
+                    <th scope="col">Prix Unitaire</th>
+                    <th scope="col">Qte</th>
+                    <th scope="col">Disponibilite</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Archi_Data.Produit p in ViewBag.produits)
+                {
+                    
+                    <tr>
+                        <th scope="row">@p.Nom</th>
+                        <td>@p.PrixUnitaire Ar</td>
+                        <td>@p.QteStock</td>
+                        <td>
+                            @if (p.QteStock != 0)
+                            {
+                                <span class="badge bg-success">Disponible</span>
+                            }
+                            else { 
+                                  <span class="badge bg-danger">epuise</span>
+                            }
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    
+        <div class="col-6">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Login</div>
+                <div class="card-body">
+                    <label> Connectez vous pour affectuer l'achat</label>
+                    <form method="post" action="https://localhost:5001/home/login">
+                        <div class="form-group has-success">
+                            <label class="form-label mt-4" for="inputValid">Nom d'Utlisateur</label>
+                            <input name="Utilisateur" type="text" value="user" class="form-control is-valid" id="inputValid">
+                            <div class="valid-feedback">Utilisateur Dispo</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">Mots De Passe</label>
+                            <input name="Mdp" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-light">Valider</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-success">Inscription</button>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+</div>
