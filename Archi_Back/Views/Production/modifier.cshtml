@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "modifier";
+}
+
+<h1>modifier</h1>
+<br /><br />
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <form method="post" action="https://localhost:5001/Production/validerMod?Id=@ViewBag.Id">
+            <div class="card border-primary mb-3">
+                <div class="card-header">Modification</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+                        <input name="Nom" type="text" value="@ViewBag.prod.Nom" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Quantite</label>
+                        <input name="Qte" type="text" value="@ViewBag.prod.QteStock" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Prix</label>
+                        <input name="Prix" type="text" value="@ViewBag.prod.PrixUnitaire" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+</div>

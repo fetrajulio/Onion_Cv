@@ -34,5 +34,29 @@ namespace Archi_Repository
             }
             return this.produits;
         }
+        public void supp(int id)
+        {
+            string sql = "DELETE FROM `Produit` WHERE `Produit`.`id` = " + id;
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader read = cmd.ExecuteReader();
+            con.Close();
+        }
+        public void mod(int id,string Nom,int qte,int prix)
+        {
+            string sql = "UPDATE `Produit` SET `Nom` = '"+Nom+"', `qte` = '"+qte+"', `prix` = '"+prix+"' WHERE `Produit`.`id` = "+id+";";
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader read = cmd.ExecuteReader();
+            con.Close();
+        }
+        public void ajout(string Nom,int qte,int prix)
+        {
+            string sql = "INSERT INTO `Produit` (`id`, `Nom`, `qte`, `prix`) VALUES (NULL, '"+Nom+"', '"+qte+"', '"+prix+"');";
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader read = cmd.ExecuteReader();
+            con.Close();
+        }
     }
 }

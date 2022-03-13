@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+    <br /><br />
     <div class="row">
 
         
@@ -11,7 +11,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-10">Nos Produit</div>
-                        <div class="col-2"><button type="button" class="btn btn-primary">+Nouveau</button></div>
+                        <div class="col-2"><button type="button" class="btn btn-primary"onclick="location.href = 'https://localhost:5001/Production/ajout';" >+Nouveau</button></div>
                     </div>
                 </div>
                 <div class="card-body">
@@ -34,8 +34,8 @@
                                     <th scope="row">@p.Nom</th>
                                     <td>@p.PrixUnitaire Ar</td>
                                     <td>@p.QteStock</td>
-                                    <td><button type="button" class="btn btn-warning">Modifier</button></td>
-                                    <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
+                                    <td><button type="button" onclick="location.href = 'https://localhost:5001/Production/modifier?id=@p.Id';" class="btn btn-warning">Modifier</button></td>
+                                    <td><button type="button" onclick="location.href = 'https://localhost:5001/Production/Suprimer/?id=@p.Id';" class="btn btn-outline-danger">Supprimer</button></td>
                                     
                                 </tr>
                             }

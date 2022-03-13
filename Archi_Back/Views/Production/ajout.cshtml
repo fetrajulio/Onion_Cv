@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "ajout";
+}
+
+<h1>ajout</h1>
+
+<br />
+<br />
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <form method="post" action="https://localhost:5001/Production/validerAjout">
+            <div class="card border-primary mb-3">
+                <div class="card-header">Modification</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+                        <input name="Nom" type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Quantite</label>
+                        <input name="Qte" type="text"  class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Prix</label>
+                        <input name="Prix" type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+</div>
