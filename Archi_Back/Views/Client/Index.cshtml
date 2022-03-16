@@ -2,63 +2,75 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+    <br /><br />
 <div class="row">
     
-    <div class="col-9">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Nom Produit</th>
-                    <th scope="col">Prix Unitaire</th>
-                    <th scope="col">Qte</th>
-                    <th scope="col">Disponibilite</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (Archi_Data.Produit p in ViewBag.produits)
-                {
-
+    <div class="col-7">
+        
+            <table class="table table-hover">
+                <thead>
                     <tr>
-                        <th scope="row">@p.Nom</th>
-                        <td>@p.PrixUnitaire Ar</td>
-                        <td>
-                            
-                                <select class="form-select" id="exampleSelect1">
-                                    @for(int a=0;a<p.QteStock;a++)
-                                    {
-                                        <option> @a sur @p.QteStock</option>
-                                    }
-                                </select>
-                            
-                        </td>
-                        <td>
-                            @if (p.QteStock != 0)
-                            {
-                                <span class="badge bg-success">Disponible</span>
-                            }
-                            else
-                            {
-                                <span class="badge bg-danger">epuise</span>
-                            }
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Acheter</button>
-                        </td>
+                        <th scope="col">Nom Produit</th>
+                        <th scope="col">Prix Unitaire</th>
+                        
+                        <th scope="col">Disponibilite</th>
+                        <th scope="col">Action</th>
                     </tr>
-                }
+                </thead>
+                <tbody>
+                    @foreach (Archi_Data.Produit p in ViewBag.produits)
+                    {
 
-            </tbody>
-        </table>
+                        <tr>
+
+                            <th scope="row">@p.Nom</th>
+                            <td>@p.PrixUnitaire Ar</td>
+                            <td>
+                                @if (p.QteStock != 0)
+                                {
+                                    <span class="badge bg-success">Disponible</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">epuise</span>
+                                }
+                            </td>
+                            <td>
+                                <button type="submit" onclick="location.href = 'https://localhost:5001/Client/acheter?user=@ViewBag.Client.Utilisateur&idProd=@p.Id';" class="btn btn-primary">Acheter</button>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
     </div>
     
-    <div class="col-3">
+    <div class="col-5">
+        <br /><br /><br />
         <div class="card border-primary mb-3">
-            <div class="card-header">Bienvenue @ViewBag.Client.Nom</div>
+            <div class="card-header">Validation d'achat de @ViewBag.Client.Nom</div>
             <div class="card-body">
+
+                <h5>
+                    @ViewBag.panier.Nom
+                </h5>
+                <form method="post" name="calc" action="https://localhost:5001/Client/valAchat?idprod=@ViewBag.panier.Id&idclient=@ViewBag.Client.Id+">
+
+                   
+                    <select name="nbr" class="form-select" id="nbr" onkeyup="sum()">
+                        @for (int a = 0; a < ViewBag.panier.QteStock; a++)
+                        {
+                            <option onkeyup="sum()" value="@a"> @a sur @ViewBag.panier.QteStock</option>
+                        }
+                    </select>
+
+                    <button type="submit" value="calculate" class="btn btn-outline-primary">Valider l'achats</button>
+                </form>
+              
+
             </div>
-        </div>
     </div>
+    
 </div>
 

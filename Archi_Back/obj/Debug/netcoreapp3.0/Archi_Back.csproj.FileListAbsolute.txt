@@ -155,3 +155,7 @@ C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Production\Index.cshtml.g.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Production\modifier.cshtml.g.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Production\ajout.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Client\testclient.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Client\Facturation.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Dg.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\dg\Index.cshtml.g.cs

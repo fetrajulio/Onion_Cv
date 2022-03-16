@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Facturation";
+    Archi_Service.ProduitService prod = new Archi_Service.ProduitService();
+    Archi_Service.ClientService cl = new Archi_Service.ClientService();
+}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="card border-primary mb-3">
+                <div class="card-header"> Factiration et Validation du DG</div>
+                <div class="card-body">
+                    <label>Achat du @ViewBag.achat.Date</label>
+                    <label>Nom du produit : <b>@prod.getById(ViewBag.achat.IdProduit).Nom</b> =>Nombre : @ViewBag.achat.Nbr</label>
+                    <br />
+                    <label>Nom Du Client :<b>@cl.GetClientById(ViewBag.achat.IdClient).Nom</b> </label>
+                    <br />
+                    <label> Prix Total : @ViewBag.achat.PrixTotal</label>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="col-1"></div>
+    </div>
+   
+

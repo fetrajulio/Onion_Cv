@@ -19,5 +19,16 @@ namespace Archi_Service
             List<Produit> produits = prrepo.GetAll().ToList();
             return produits.First(x => x.Id == id);
         }
+
+        public int montant()
+        {
+            int mont = 0;
+            List<Produit> produits = prrepo.GetAll().ToList();
+            foreach(Produit p in produits)
+            {
+                mont += p.PrixUnitaire *p.QteStock;
+            }
+            return mont;
+        }
     }
 }
