@@ -15,6 +15,7 @@ namespace Archi_Back.Controllers
         ProduitService produitService = new ProduitService();
         AchatVenteRepo achatVenteRepo = new AchatVenteRepo();
         AchatService achatService = new AchatService();
+        ClientRepo CR = new ClientRepo();
         
         public Produit paner=new Produit();
         public IActionResult Index()
@@ -51,6 +52,16 @@ namespace Archi_Back.Controllers
             achatVenteRepo.achat(idclient, idprod, nbr,p.PrixUnitaire*nbr);
             ViewBag.achat=achatService.GetBy(idclient, idprod, nbr, 0);
             return View("Facturation");
+        }
+
+        public IActionResult validerInsc()
+        {
+            string nom= Request.Form["Nom"];
+            string email = Request.Form["Email"];
+            string tel = Request.Form["Tel"];
+            string mdp= Request.Form["Mdp"];
+            CR.Inscr(nom, email, mdp, tel);
+            return Redirect("https://localhost:5001/home");
         }
     }
 }

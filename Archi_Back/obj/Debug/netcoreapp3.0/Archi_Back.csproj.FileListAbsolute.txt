@@ -1,6 +1,5 @@
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\appsettings.json
-C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.exe
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.deps.json
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.runtimeconfig.json
@@ -9,9 +8,7 @@ C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.pdb
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.Views.dll
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\Archi_Back.Views.pdb
-C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.csprojAssemblyReference.cache
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\staticwebassets\Archi_Back.StaticWebAssets.Manifest.cache
-C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\staticwebassets\Archi_Back.StaticWebAssets.xml
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.RazorAssemblyInfo.cache
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.RazorAssemblyInfo.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.AssemblyInfoInputs.cache
@@ -159,3 +156,10 @@ C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Client\Facturation.cshtml.g.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Dg.cshtml.g.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\dg\Index.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Finance\Index.cshtml.g.cs
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.csproj.AssemblyReference.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.csproj.CoreCompileInputs.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Archi_Back.genruntimeconfig.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Back\obj\Debug\netcoreapp3.0\Razor\Views\Home\Insc.cshtml.g.cs

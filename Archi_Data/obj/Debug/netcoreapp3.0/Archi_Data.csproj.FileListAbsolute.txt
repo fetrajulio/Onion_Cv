@@ -5,4 +5,6 @@ C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.AssemblyInfo.cs
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.dll
 C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.pdb
-C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.csprojAssemblyReference.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.csproj.AssemblyReference.cache
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dialy\source\repos\Archi_Back\Archi_Data\obj\Debug\netcoreapp3.0\Archi_Data.csproj.CoreCompileInputs.cache

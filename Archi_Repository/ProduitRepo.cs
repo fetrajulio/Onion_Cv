@@ -58,5 +58,31 @@ namespace Archi_Repository
             MySqlDataReader read = cmd.ExecuteReader();
             con.Close();
         }
+
+        public void moinQt(int id,int x)
+        {
+            string sql = "SELECT * FROM `Produit` WHERE `Produit`.`id` =" + id + ";";
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            Produit p = new Produit();
+            while (reader.Read())
+            {
+                
+                p.Id = Convert.ToInt32(reader["id"]);
+                p.PrixUnitaire = Convert.ToInt32(reader["prix"]);
+                p.QteStock = Convert.ToInt32(reader["qte"]);
+                p.Nom = reader["Nom"].ToString();
+                
+            }
+            con.Close();
+            int nbr = p.QteStock-x;
+            con.Open();
+            string sql2 = "UPDATE `Produit` SET `qte` = '"+nbr+"' WHERE `Produit`.`id` = "+id+";";
+            cmd = new MySqlCommand(sql2, con);
+            MySqlDataReader reader2 = cmd.ExecuteReader();
+            con.Close();
+            
+        }
     }
 }

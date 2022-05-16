@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<br />
+<br />
+<form method="post" action="https://localhost:5001/Client/validerInsc">
+    <div class="card border-primary mb-3">
+        <div class="card-header">Inscription</div>
+        <div class="card-body">
+
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+                <input name="Nom" type="text" class="form-control" placeholder="Nom" id="inputDefault">
+
+            </div>
+
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">Numero Telephone</label>
+                <input  name="Tel" type="text" class="form-control" placeholder="Nom" id="inputDefault">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label mt-4">Mots de Pass</label>
+                <input name="Mdp" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
+</form>

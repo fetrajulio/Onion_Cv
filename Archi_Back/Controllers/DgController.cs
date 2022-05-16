@@ -29,7 +29,8 @@ namespace Archi_Back.Controllers
         {
             AchatVenteRepo achatVenteRepo = new AchatVenteRepo();
             achatVenteRepo.accpteref(id, 1);
-            
+            ProduitRepo produitRepo = new ProduitRepo();
+            produitRepo.moinQt(id, x);
             return Redirect("Index");
         }
 

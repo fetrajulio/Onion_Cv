@@ -34,6 +34,10 @@ namespace Archi_Back.Controllers
             return Redirect("https://localhost:5001/home"); ;
 
         }
+        public ActionResult Insc()
+        {
+            return View();
+        }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -41,7 +45,9 @@ namespace Archi_Back.Controllers
 
         public IActionResult Index()
         {
-
+            FinanceRepo financeRepo = new FinanceRepo();
+            FinanceService financeService = new FinanceService();
+            financeService.SetFinance();
             ViewBag.produits = produitService.GetAll();
             return View();
         }

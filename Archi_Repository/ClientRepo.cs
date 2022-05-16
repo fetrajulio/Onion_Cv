@@ -11,6 +11,15 @@ namespace Archi_Repository
         private Client[] clients;
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=ArchiB_BD; User id=root; Password=;");
 
+        public void Inscr(string nom,string email,string mdp,string tel)
+        {
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `Client` (`Id`, `Nom`, `Tel`, `Utilisateur`, `Mdp`)" +
+                " VALUES (NULL, '"+nom+"', '"+tel+"', '"+email+"', '"+mdp+"');", con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            con.Close();
+        }
+
         public Client[] GetAll()
         {
             List<Client> tmp = new List<Client>();
@@ -35,6 +44,8 @@ namespace Archi_Repository
             this.clients = tmp.ToArray();
             return this.clients;
         }
+
+        
         
     }
 }
