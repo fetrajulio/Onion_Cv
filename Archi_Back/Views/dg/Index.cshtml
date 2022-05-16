@@ -28,7 +28,7 @@
                         <th scope="row">@v.Date</th>
                         <td>@cls.getNomClient(@v.IdClient)</td>
                         
-                        <td>@v.IdProduit</td>
+                        <td>@cls.getNomProduit(@v.IdProduit)</td>
                         <td>@v.Nbr</td>
                         <td>@v.PrixTotal Ar</td>
                         <td><button type="button" onclick="location.href = 'https://localhost:5001/Dg/accpt?id=@v.Id&x=@v.Nbr';" class="btn btn-success">Accepter</button></td>
